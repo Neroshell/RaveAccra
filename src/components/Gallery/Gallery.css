@@ -1,0 +1,71 @@
+
+.gallery{
+    border: 1px solid black;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    text-align: center;
+
+
+  }
+
+  .image-list{
+
+    margin-top: 70px;
+    
+  }
+  .gallery h3{
+  
+    font-size: 40px;
+    position: relative;
+    
+  
+  
+  
+  }
+  
+  
+  
+  
+    
+   
+  
+  @media (min-width: 768px) {
+  
+      .gallery{
+         
+          padding-top: 90px;
+          padding-bottom: 159px;
+          border: 1pz solid red;
+        
+         
+      }
+  
+  .image-list{
+
+    margin-top: 70px;
+    
+  
+  }
+      
+  
+        .gallery h3{
+  
+            font-size: 60px;
+          
+  
+          
+        }
+
+       
+  
+      }
+       
+  
+  
+  
+  
+     
+      
+      
+        
+       

@@ -1,0 +1,60 @@
+.footer {
+        
+    background-color: rgb(49, 25, 107);/* Set background color */
+    color: #fff; /* Set text color */
+    padding-top: 20px; /* Add padding */
+    text-align: center; /* Center align text */
+    width: 100%; /* Full width */
+    border: 1px solid yellow;
+    
+  }
+
+  .img-container{
+
+    width: 20% ;
+    margin: 0 auto;
+}
+
+
+
+
+    
+  
+  @media (min-width: 768px) {
+    .footer {
+        
+        background-color: rgb(49, 25, 107);/* Set background color */
+        color: #fff; /* Set text color */
+        padding-top: 20px; /* Add padding */
+        text-align: center; /* Center align text */
+        width: 100%; /* Full width */
+        border: 1px solid yellow;
+        
+      }
+
+      .img-container{
+
+        width: 10% ;
+        margin: 0 auto;
+    }
+    
+    .img-fluid{
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+   
+}
+    
+
+     
+
+
+
+
+   
+    
+    
+      
+     

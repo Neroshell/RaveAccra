@@ -1,0 +1,87 @@
+.carousel_cont {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+
+
+}
+
+
+.carousel_cont::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(49, 25, 107, 0.6);
+  z-index: 1;
+
+}
+
+.image-box {
+  width: 100%;
+  height: 100vh;
+
+  
+}
+
+.video-item {
+  width: 100%; 
+  height: 100%; /* Set height to 100% */
+  object-fit: cover;
+  
+  
+}
+
+
+.carousel_heading {
+   
+    width: 80%;
+    z-index: 5;
+    margin-bottom: 300px;
+  
+  
+}
+
+
+
+.carousel_heading h3{
+   font-size: 45px;
+   color: #D7BBF5;
+   font-weight: 900;
+}
+
+
+@media (min-width: 768px) {
+   
+
+ 
+
+.carousel_heading {
+  position: absolute;
+  top: 40%; /* Position at the vertical center */
+  transform: translate(-50%, -50%); /* Move back by half of its own width and height */
+  text-align: center; /* Center the text inside the heading */
+  width: 80%; /* Adjust width as needed */
+  z-index: 5;
+  margin-left: 440px;
+  line-height: 1.8px;
+  
+}
+
+.carousel_heading h3{
+  font-size: 70px;
+  color: #FFE5E5;
+  font-weight: 900;
+}
+
+
+.button-33{
+    margin: 40px auto;
+
+} 
+ 
+}
