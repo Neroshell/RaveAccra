@@ -1,12 +1,12 @@
 
 .events{
-  border: 1px solid red;
+  
   margin-top: 100vh;
   padding-top: 90px;
   padding-bottom: 50px;
   text-align: center;
 
-  
+  background-color: #FFE5E5;
   background-image: url('');
   /* Other background properties can be added as needed */
   background-size: cover; /* This property ensures the image covers the entire element */
@@ -17,6 +17,7 @@
 
   font-size: 40px;
   position: relative;
+  color: var(--primary-color);
 }
 
 
@@ -33,10 +34,20 @@
   .carousel-image {
     width: 100%;
     height: auto;
-    max-height: 200%
+    max-height: 100%;
+    border-radius: 10px;
 
   }
-  
+
+  .upcoming-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .upcoming-data p{
+    font-weight: bold;
+  }
  
 
 @media (min-width: 768px) {

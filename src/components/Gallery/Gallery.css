@@ -4,6 +4,7 @@
     padding-top: 90px;
     padding-bottom: 50px;
     text-align: center;
+    background-color: #FFE5E5;
 
 
   }
@@ -17,6 +18,7 @@
   
     font-size: 40px;
     position: relative;
+    color: var(--primary-color);
     
   
   
@@ -34,8 +36,8 @@
       .gallery{
          
           padding-top: 90px;
-          padding-bottom: 159px;
-          border: 1pz solid red;
+          padding-bottom: 0px;
+          border: 3px solid orange;
         
          
       }

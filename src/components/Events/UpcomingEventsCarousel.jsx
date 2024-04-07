@@ -1,28 +1,24 @@
-
-
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import event_img from '../../assets/event_img.jpeg';
-import 'swiper/css';
-
-
-
-
 
 const UpcomingEventsCarousel = () => {
   return (
     <div className='carousel-container'>
       <Swiper
-       
         loop={true}
         spaceBetween={15} 
-        navigation={{ clickable: true }}
-        pagination={{ clickable: true }}
+        autoplay={{
+            delay: 2000,
+            disableOnInteraction: false
+          }}
+        pagination={true}
+
         slidesPerView={1}
-       
         breakpoints={{
           768: {
             slidesPerView: 2,
@@ -31,25 +27,24 @@ const UpcomingEventsCarousel = () => {
             slidesPerView: 4,
           },
         }}
-       
       >
         <SwiperSlide className='slide'>
-          <img className='carousel-image' src={event_img} />
+          <img className='carousel-image' src={event_img} alt="Event" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='carousel-image' src={event_img} />
+          <img className='carousel-image' src={event_img} alt="Event" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='carousel-image' src={event_img} />
+          <img className='carousel-image' src={event_img} alt="Event" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='carousel-image' src={event_img} />
+          <img className='carousel-image' src={event_img} alt="Event" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='carousel-image' src={event_img} />
+          <img className='carousel-image' src={event_img} alt="Event" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='carousel-image' src={event_img} />
+          <img className='carousel-image' src={event_img} alt="Event" />
         </SwiperSlide>
       </Swiper>
     </div>
