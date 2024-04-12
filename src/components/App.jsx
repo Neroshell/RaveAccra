@@ -1,21 +1,17 @@
 import React from 'react';
-import Navbar from './Navbar/Navbar.jsx';
-import Carousel from './Carousel/Carousel.jsx';
-import Services from './Services/Services.jsx';
-import Events from './Events/Events.jsx';
-import Gallery from './Gallery/Gallery.jsx';
-import Footer from './Footer/Footer.jsx';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home.jsx'; // Create a Home component
+import BottleService from './pages/BottleService.jsx'; // Create a Home component
+
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Carousel />
-      <Events />
-      <Services />
-      <Gallery />
-      <Footer />
-    </div>
+    <Router>
+       <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/bottleService" element={<BottleService />} />
+      </Routes>
+    </Router>
   );
 }
 

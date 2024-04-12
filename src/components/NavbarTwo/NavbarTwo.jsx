@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../../assets/rave_logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import './Navbar.css';
+import './NavbarTwo.css';
 import Button from '@mui/material/Button';
 
 const buttonStyles = {
