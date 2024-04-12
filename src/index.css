@@ -7,6 +7,7 @@
   -moz-osx-font-smoothing: grayscale;
   --primary-color: rgb(49, 25, 107);
   --secondary-color: #EC53B0  ;
+  --tertiary-color: #FFE5E5;
 
 }
 *{

@@ -51,8 +51,10 @@
 .carousel_heading h3{
    font-size: 45px;
    color: #D7BBF5;
-   font-weight: 900;
+   font-weight: 200;
 }
+
+
 
 
 @media (min-width: 768px) {

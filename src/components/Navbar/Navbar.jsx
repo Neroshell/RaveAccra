@@ -12,7 +12,8 @@ const buttonStyles = {
   marginLeft: '30px',
   display: "block",
   '&:hover': {
-    backgroundColor: "rgb(49, 25, 107, 0.6)",
+    backgroundColor: "#FFE5E5",
+    color: 'var(--primary-color)',
     transform: "scale(0.8) rotate(-5deg);"
   },
 };
@@ -56,11 +57,11 @@ const MyNavbar = () => {
       </Navbar.Toggle>
       <Navbar.Collapse id="basic-navbar-nav" className={isNavOpen ? 'show' : ''}>
         <Nav className="mr-auto">
-          <Nav.Link href="#">Event</Nav.Link>
-          <Nav.Link href="#">VIP</Nav.Link>
-          <Nav.Link href="#">Media</Nav.Link>
-          <Nav.Link href="#">Rental</Nav.Link>
-          <Nav.Link href="#">Socials</Nav.Link>
+          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/events">Event</Nav.Link>
+          <Nav.Link href="/vip">VIP</Nav.Link>
+          <Nav.Link href="/media">Media</Nav.Link>
+          <Nav.Link href="/socials">Socials</Nav.Link>
         </Nav>
         <Button variant="contained" sx={buttonStyles}>Reserve VIP</Button>
       </Navbar.Collapse>
