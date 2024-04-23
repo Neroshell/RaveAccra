@@ -1,12 +1,12 @@
 import React from 'react'
 import './PageTitle.css'
 
-function PageTitle() {
+function PageTitle(props) {
   return (
     <div className='page-title'>
         <div className='page-child'>
-            <h1>Bottle Services</h1>
-            <p>Home - Bottle service</p>
+            <h1>{props.title}</h1>
+            <p>{props.subtitle}</p>
 
         </div>
      

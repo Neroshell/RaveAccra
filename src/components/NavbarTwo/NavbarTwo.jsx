@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../assets/rave_logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './NavbarTwo.css';
 import Button from '@mui/material/Button';
+
+
+
 
 const buttonStyles = {
   backgroundColor: '#EC53B0',
@@ -18,7 +22,7 @@ const buttonStyles = {
   },
 };
 
-const MyNavbar = () => {
+const NavbarTwo = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
 
@@ -44,7 +48,7 @@ const MyNavbar = () => {
   }, []);
 
   return (
-    <Navbar variant="dark" expand="lg" className="my-navbar" fixed={isFixed ? "top" : null}>
+    <Navbar variant="dark" expand="lg" className="my-navbar" fixed={isFixed ? "top" : null} >
       <Navbar.Brand href="#">
         <img
           src={logo}
@@ -59,8 +63,8 @@ const MyNavbar = () => {
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/bottleService">Bottle service</Nav.Link>
-          <Nav.Link href="/events">Event</Nav.Link>
-          <Nav.Link href="/media">Media</Nav.Link>
+          <Nav.Link href="/event">Event</Nav.Link>
+          <Nav.Link href="/about">About</Nav.Link>
           <Nav.Link href="/socials">Socials</Nav.Link>
         </Nav>
         <Button variant="contained" sx={buttonStyles}>Reserve VIP</Button>
@@ -69,4 +73,4 @@ const MyNavbar = () => {
   );
 };
 
-export default MyNavbar;
+export default NavbarTwo;

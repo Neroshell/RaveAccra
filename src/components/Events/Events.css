@@ -1,11 +1,9 @@
 
 .events{
-  
   margin-top: 100vh;
   padding-top: 90px;
   padding-bottom: 50px;
   text-align: center;
-
   background-color: #FFE5E5;
   background-image: url('');
   /* Other background properties can be added as needed */
@@ -53,9 +51,9 @@
 @media (min-width: 768px) {
 
     .events{
-        border: 1px solid red;
+       
         padding-top: 90px;
-        margin-top: 87.3vh;
+        margin-top: 75vh;
        
     }
 

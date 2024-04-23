@@ -40,7 +40,7 @@
       object-fit: cover;
 }
 
-ul{
+.footer-ul{
   
   display: inline-flex;
   justify-content: center;
@@ -52,13 +52,14 @@ ul{
  
 
 }
- li{
+ .footer-ul li{
   text-decoration:none;
   list-style-type: none;
   text-transform: uppercase;
   padding: 5px;
   margin-right: 20px;
   font-weight: 700;
+  text-align: center;
 
   
 }
@@ -112,7 +113,7 @@ margin: 60px auto;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-size: 30px;
+  font-size: 20px;
   padding-bottom: 20px;
 }
 
@@ -162,7 +163,7 @@ margin: 60px auto;
         object-fit: cover;
     }
 
-    ul{
+    .footer-ul{
   
      gap: 40px;
     }
@@ -174,15 +175,20 @@ margin: 60px auto;
       
       }
       .info-data{
-        gap: 10px;
+        gap: 90px;
       }
 
       .icon-wrapper{
         color:#EC53B0 ;
         margin-top: -25px;
+        margin-right: -80px;
         justify-content: center;
         align-items: center;
         text-align: center;
+      }
+
+      .text-wrapper h3{
+        font-size: 22px;
       }
 }
     

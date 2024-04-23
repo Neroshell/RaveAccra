@@ -8,15 +8,17 @@
     position: relative;
     padding-top: 50px;
     padding-bottom: 50px;
+  
+    width: 100%;
  
    
 }
 
 .page-child{
-    border: 1px solid red;
     text-align: center;
     color: #FFE5E5;
     z-index: 2;
+    margin-top: 40px;
 }
 
 .page-title::after{
@@ -34,6 +36,10 @@
 
 @media (min-width: 768px) {
 
-
+    .page-child{
+        text-align: center;
+        color: #FFE5E5;
+        z-index: 2;
+    }
 
 }

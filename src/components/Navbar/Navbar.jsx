@@ -1,22 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../assets/rave_logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
-import Button from '@mui/material/Button';
-
-const buttonStyles = {
-  backgroundColor: '#EC53B0',
-  color: 'white',
-  padding: '12px',
-  marginLeft: '30px',
-  display: "block",
-  '&:hover': {
-    backgroundColor: "#FFE5E5",
-    color: 'var(--primary-color)',
-    transform: "scale(0.8) rotate(-5deg);"
-  },
-};
+import Button from '../Buttons/Button.jsx';
 
 const MyNavbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -44,7 +32,7 @@ const MyNavbar = () => {
   }, []);
 
   return (
-    <Navbar variant="dark" expand="lg" className="my-navbar" fixed={isFixed ? "top" : null}>
+    <Navbar variant="dark" expand="lg" className="navbar-two" fixed={isFixed ? "top" : null} >
       <Navbar.Brand href="#">
         <img
           src={logo}
@@ -63,7 +51,7 @@ const MyNavbar = () => {
           <Nav.Link href="/media">Media</Nav.Link>
           <Nav.Link href="/socials">Socials</Nav.Link>
         </Nav>
-        <Button variant="contained" sx={buttonStyles}>Reserve VIP</Button>
+        <Button name='RESERVE VIP' />
       </Navbar.Collapse>
     </Navbar>
   );

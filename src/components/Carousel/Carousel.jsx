@@ -17,7 +17,6 @@ const MyCarousel = () => {
           </div>
           <Carousel.Caption className='carousel_heading'>
               <h3>Experience the heartbeat of Accra's nightlife at <span style={{color: " #EC53B0", fontWeight:'900'}}>Rave.</span>  </h3> 
-             <Button variant='contained'>CHeck list</Button>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -29,7 +28,7 @@ const MyCarousel = () => {
           </div>
           <Carousel.Caption className='carousel_heading'>
           <h3>Elevate your <span style={{color: " #EC53B0"}}>Nightlife</span> experience to new heights  </h3> 
-          <Button variant='contained'>CHeck list</Button>
+          
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -41,7 +40,7 @@ const MyCarousel = () => {
           </div>
           <Carousel.Caption className='carousel_heading'>
           <h3>Discover the pulse of Accra's after-dark allure at <span style={{color: " #EC53B0"}}>Rave.</span>  </h3> 
-            <p>Description of the third video.</p>
+           
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

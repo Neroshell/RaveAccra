@@ -45,7 +45,7 @@ const Footer = () => {
   return (
     <div className='footer'>
     
-      <ul>
+      <ul className='footer-ul'>
         <li>EVENT</li>
         <li>VIP</li>
         <li>MEDIA</li>

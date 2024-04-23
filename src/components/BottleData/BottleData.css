@@ -1,0 +1,36 @@
+.bottle-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE5E5;
+    flex-wrap: wrap;
+    gap: 0px;
+   
+    
+}
+
+.bottle-data li{
+    color: rgb(80, 100, 130);
+}
+
+.bottle-data p{
+    color: rgb(80, 100, 130);
+    font-style: oblique;
+    background-color: #EC53B0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+  
+@media (min-width: 768px) {
+    .bottle-data{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFE5E5;
+      
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+}

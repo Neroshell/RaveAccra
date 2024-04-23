@@ -1,0 +1,49 @@
+.drinks-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    width: 80%;
+    padding: 20px;
+    margin-top: 50px;
+    height: 250px;
+    
+  }
+  
+  .drinks-card-h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+  }
+
+  .drinks-card-list li {
+    margin-bottom: 4px;
+    position: relative; /* Set position to relative */
+    padding-left: 25px;
+  }
+
+  .drinks-card-list {
+    list-style: none; /* Remove default list styles */
+    padding-left: 0px; /* Reset padding */
+    margin-left: 40px;
+    margin-top: 30px;
+   
+}
+
+.drinks-card-list li::before {
+    content: '•'; /* Unicode bullet character */
+    color: var(--secondary-color);
+    position: absolute; /* Set position to absolute */
+    left: 0px; /* Position it at the start of the list item */
+}
+
+
+
+
+  
+@media (min-width: 768px) {
+  .drinks-card{
+      width: 25%;
+  }
+
+}

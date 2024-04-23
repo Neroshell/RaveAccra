@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import NavbarTwo from '../NavbarTwo/NavbarTwo.jsx';
 import PageTitle from '../pageTitle/PageTitle.jsx';
 import Footer from '../Footer/Footer.jsx';
+import BottleData from  '../BottleData/BottleData.jsx';
 
 const BottleService = () => {
   return (
@@ -11,7 +12,8 @@ const BottleService = () => {
         <title>Bottle | Rave</title>
       </Helmet>
       <NavbarTwo />
-      <PageTitle/>
+      <PageTitle title= "Bottle Services"  subtitle= 'Home - Bottle services'/>
+      <BottleData />
       <Footer />
     </div>
   );
