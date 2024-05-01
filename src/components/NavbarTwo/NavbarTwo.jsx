@@ -4,23 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../assets/rave_logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './NavbarTwo.css';
-import Button from '@mui/material/Button';
+import Button from '../Buttons/Button.jsx';
 
-
-
-
-const buttonStyles = {
-  backgroundColor: '#EC53B0',
-  color: 'white',
-  padding: '12px',
-  marginLeft: '30px',
-  display: "block",
-  '&:hover': {
-    backgroundColor: "#FFE5E5",
-    color: 'var(--primary-color)',
-    transform: "scale(0.8) rotate(-5deg);"
-  },
-};
 
 const NavbarTwo = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -48,8 +33,8 @@ const NavbarTwo = () => {
   }, []);
 
   return (
-    <Navbar variant="dark" expand="lg" className="my-navbar" fixed={isFixed ? "top" : null} >
-      <Navbar.Brand href="#">
+    <Navbar variant="dark" expand="lg" className="navbar-two" fixed={isFixed ? "top" : null} >
+      <Navbar.Brand href="/">
         <img
           src={logo}
           alt="Rave Logo"
@@ -65,9 +50,9 @@ const NavbarTwo = () => {
           <Nav.Link href="/bottleService">Bottle service</Nav.Link>
           <Nav.Link href="/event">Event</Nav.Link>
           <Nav.Link href="/about">About</Nav.Link>
-          <Nav.Link href="/socials">Socials</Nav.Link>
+          <Nav.Link href="/contact">Contact Us</Nav.Link>
         </Nav>
-        <Button variant="contained" sx={buttonStyles}>Reserve VIP</Button>
+        <Button name='Reserve Vip'></Button>
       </Navbar.Collapse>
     </Navbar>
   );

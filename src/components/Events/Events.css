@@ -1,29 +1,36 @@
 
 .events{
   margin-top: 100vh;
-  padding-top: 90px;
+  padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
   background-color: #FFE5E5;
-  background-image: url('');
-  /* Other background properties can be added as needed */
-  background-size: cover; /* This property ensures the image covers the entire element */
-  background-repeat: no-repeat; 
+  
 }
 
-.events h3{
+.event-headings h3{
 
-  font-size: 40px;
+  font-size: 120px;
   position: relative;
-  color: var(--primary-color);
+  color: var(--tertiary-color);
+  text-shadow: rgba(0, 0, 0, 0.1) 9px 9px 9px;
+  
+}
+
+.event-headings h4{
+  position: relative;
+  bottom: 85px;
+  font-size: 35px
+  
 }
 
 
 
 .carousel-container {
     width: 90%;
-    margin: 0px auto;
+    margin: 40px auto;
     padding: 20px;
+   
     
   }
 
@@ -31,7 +38,6 @@
     
   .carousel-image {
     width: 100%;
-    height: auto;
     max-height: 100%;
     border-radius: 10px;
 
@@ -43,8 +49,13 @@
     align-items: center;
     gap: 10px;
   }
-  .upcoming-data p{
+
+  .upcoming-data{
     font-weight: bold;
+    color: var(--paragraph);
+    position: relative;
+    bottom: 49px;
+    
   }
  
 
@@ -54,6 +65,7 @@
        
         padding-top: 90px;
         margin-top: 75vh;
+        
        
     }
 
@@ -79,17 +91,29 @@
 
       .events h3{
 
-          font-size: 60px;
-        
-
+          font-size: 165px;
+          letter-spacing: 5px;
+      
+      }
+      .events h4{
+        position: relative;
+        bottom: 120px;
+        font-size: 50px
         
       }
-
-    }
+      
+     
+      
+      .upcoming-data{
+        position: relative;
+        bottom: 120px;
+      }
+      
+      
      
 
 
-
+  }
 
    
     

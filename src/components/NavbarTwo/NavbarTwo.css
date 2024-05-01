@@ -16,12 +16,7 @@
   margin-left: 10px;
 }
 
-.navbar-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
+
 
 .nav-link {
   position: relative; /* Ensure relative positioning */
@@ -30,11 +25,8 @@
   font-weight: bolder;
   font-size: 13px;
   color: var(--tertiary-color); /* Custom text color */
+  
 }
-
-/* Underline effect */
-
-
 
 
 /* Media query for larger screens */
@@ -44,18 +36,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index: 1000;
+    z-index: 999;
     top: 0;
     left: 0;
     gap: 7px;
-    margin: 0px auto;
-    background-color: rgb(49, 25, 107, 0);
+    background-color: rgb(49, 25, 107);
+    height: 100px;
+    position: fixed;
   }
-
-  
-
- 
-
   
   .nav-link::after {
     content: '';
@@ -78,8 +66,8 @@
   }
 
   .nav-logo {
-   
     margin-left: 40px;
+   
   }
   
 }

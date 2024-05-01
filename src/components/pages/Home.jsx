@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Navbar from '../Navbar/Navbar.jsx';
 import Carousel from '../Carousel/Carousel.jsx';
 import Event from '../Events/Events.jsx';
@@ -10,6 +11,9 @@ import Footer from '../Footer/Footer.jsx';
 const Home = () => {
   return (
     <>
+        <Helmet>
+          <title>Home | Rave</title>
+        </Helmet>
         <Navbar />
         <Carousel />
         <Event />

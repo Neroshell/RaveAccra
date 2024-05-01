@@ -5,6 +5,8 @@ import Footer from '../Footer/Footer.jsx';
 import PageTitle from '../pageTitle/PageTitle.jsx';
 import EventData from '../EventData/Eventdata.jsx';
 
+
+
 const Event = () => {
   return (
     <div>

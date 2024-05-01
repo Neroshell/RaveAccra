@@ -20,8 +20,11 @@ const itemData = [
 const Gallery = () => {
   return (
     <div className='gallery'>
+    <div className='gallery-heading'>
       <h3>Gallery</h3>
-      <p>Latest Event images</p>
+      <h4>Event images</h4>
+    </div>
+    
       <div className='image-container'>
         {itemData.map((item, index) => (
           <div key={index} className='image-fluid'>
@@ -34,3 +37,9 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
+<div className='service-heading'>
+<h3>Services</h3> 
+
+<p> Gateways to limitless <span style={{color: ' #A076F9', fontWeight: 'bolder'}}>unforgettable </span><span style={{color: '#EC53B0',  fontWeight: 'bolder'}}> experiences.</span> </p>
+</div>

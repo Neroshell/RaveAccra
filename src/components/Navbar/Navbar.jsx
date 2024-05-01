@@ -32,8 +32,8 @@ const MyNavbar = () => {
   }, []);
 
   return (
-    <Navbar variant="dark" expand="lg" className="navbar-two" fixed={isFixed ? "top" : null} >
-      <Navbar.Brand href="#">
+    <Navbar variant="dark" expand="lg" className="my-navbar" fixed={isFixed ? "top" : null} >
+      <Navbar.Brand href="/">
         <img
           src={logo}
           alt="Rave Logo"
@@ -48,10 +48,12 @@ const MyNavbar = () => {
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/bottleService">Bottle service</Nav.Link>
           <Nav.Link href="/events">Event</Nav.Link>
-          <Nav.Link href="/media">Media</Nav.Link>
-          <Nav.Link href="/socials">Socials</Nav.Link>
+          <Nav.Link href="/about">About</Nav.Link>
+          <Nav.Link href="/contact">Contact Us</Nav.Link>
+          
         </Nav>
-        <Button name='RESERVE VIP' />
+        <Button name='RESERVE VIP' />       
+
       </Navbar.Collapse>
     </Navbar>
   );

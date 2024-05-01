@@ -4,10 +4,18 @@
   height: 100vh;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 
 }
 
+.caurosel-main-div{
+  width: 100%;
+  border: 1px solid red;
+  
+}
 
 .carousel_cont::after {
   content: '';
@@ -37,21 +45,30 @@
 }
 
 
+
 .carousel_heading {
-   
-    width: 80%;
+  position: absolute;
+  top: 40%; /* Position at the vertical center */
+  transform: translate(-50%, -50%); /* Move back by half of its own width and height */
+  text-align: center;
     z-index: 5;
-    margin-bottom: 300px;
-  
-  
+    margin-top: 80px;
+    border-radius: 20px;
+    margin-left: 142px;
+    padding: 35px;
+    width: 100%;
+    word-spacing: 5px;
+    letter-spacing: px;
+    box-shadow: rgba(236, 83, 176, 0.25) 0px 10px 0px, rgba(236, 83, 176, 0.22) 0px 1px 1px ;
+   
 }
 
 
-
-.carousel_heading h3{
-   font-size: 45px;
+.carousel_heading h1{
+   font-size: 50px;
    color: #D7BBF5;
-   font-weight: 200;
+   
+ 
 }
 
 
@@ -71,6 +88,10 @@
   z-index: 5;
   margin-left: 440px;
   line-height: 1.8px;
+  background-color: transparent;
+  box-shadow: rgba(236, 83, 176, 0.25) 0px 10px 0px, rgba(236, 83, 176, 0.22) 0px 1px 1px ;
+  border-bottom-left-radius: 400px;
+ 
   
 }
 
@@ -81,9 +102,9 @@
 }
 
 
-.button-33{
-    margin: 40px auto;
 
-} 
+
+
+
  
 }

@@ -36,12 +36,13 @@ const AboutData = () => {
                     Our stage is graced by the finest Accra DJs and live bands, igniting the dance 
                     floor with infectious beats that resonate through the night.</p>
             </div>
-        <div className='image-sect'>
-            <div className='image-container'>
-                    {images.map((image, index) => (
-                    <img key={index} src={image.imageOne} alt={`Image ${index + 1}`} />
-                ))}
-            </div>
+             <div className='about-image-sect'>
+                 {images.map((image, index) => (
+                    <div className='about-image-container' key={index}>
+                         <img src={image.imageOne} alt={`Image ${index + 1}`} />
+             </div>
+))}
+
 
             </div>
     </div>
