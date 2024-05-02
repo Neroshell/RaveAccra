@@ -1,5 +1,5 @@
 .services{
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
     text-align: center;
     background-color: #FFE5E5;
@@ -102,7 +102,7 @@
 @media (min-width: 768px) {
 
     .services{
-        border: 1px solid red;
+       
         padding-top: 0;
        
     }

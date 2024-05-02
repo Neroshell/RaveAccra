@@ -57,7 +57,27 @@
     bottom: 49px;
     
   }
- 
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  color:  #EC53B0 !important ; 
+}
+
+
+
+.swiper-pagination-bullet {
+  background-color:  #EC53B0  !important; /* Change the background color of pagination bullets */
+  width: 10px; /* Adjust the width of pagination bullets */
+ /* Adjust the height of pagination bullets */
+   /* Adjust the margin between pagination bullets */
+  border-radius: 50%; /* Make pagination bullets round */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FFE5E5 ; /* Change the background color of active pagination bullet */
+}
+
 
 @media (min-width: 768px) {
 
@@ -76,7 +96,7 @@
         margin: 0 auto;
         
        
-        border: 1px solid blue;
+        
       }
 
      
@@ -84,8 +104,8 @@
          width: 100%;
         height: 100%;
         object-fit: cover;
-        border: 1px solid red;
-        border-radius: 15px;
+       
+        border-radius: 0px;
        
       }
 
