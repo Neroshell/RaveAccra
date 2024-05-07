@@ -48,17 +48,16 @@
 
 .carousel_heading {
   position: absolute;
-  top: 40%; /* Position at the vertical center */
+  top: 50%; /* Position at the vertical center */
   transform: translate(-50%, -50%); /* Move back by half of its own width and height */
   text-align: center;
-    z-index: 5;
-    margin-top: 80px;
-    border-radius: 20px;
-    margin-left: 142px;
-    padding: 35px;
-    width: 100%;
-    word-spacing: 5px;
-    letter-spacing: px;
+  z-index: 3;
+  border-radius: 20px;
+  margin-left: 142px;
+  padding: 35px;
+  width: 100%;
+ 
+    
     box-shadow: rgba(236, 83, 176, 0.25) 0px 10px 0px, rgba(236, 83, 176, 0.22) 0px 1px 1px ;
    
 }
@@ -81,7 +80,7 @@
 
 .carousel_heading {
   position: absolute;
-  top: 40%; /* Position at the vertical center */
+  top: 50%; /* Position at the vertical center */
   transform: translate(-50%, -50%); /* Move back by half of its own width and height */
   text-align: center; /* Center the text inside the heading */
   width: 80%; /* Adjust width as needed */

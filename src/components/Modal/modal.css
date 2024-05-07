@@ -1,0 +1,37 @@
+.modal-body{
+padding: 40px;
+
+
+}
+
+
+
+.modal-reserve{
+    margin-top: 200px;
+   
+}
+
+
+.modal-input-box{
+    height: 60px;
+}
+
+.error-message{
+    color: red;
+}
+
+.modal-form h3{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+
+    .modal-reserve{
+        margin-top: 0;
+    }
+    
+    .modal-input-box{
+        height: 50px;
+    }
+}

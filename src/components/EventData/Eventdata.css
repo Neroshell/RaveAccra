@@ -40,6 +40,16 @@
     margin: 25px auto;
 }
 
+.date_container :first-child{
+    color: var(--secondary-color);
+   
+}
+.date_container{
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
 
 
@@ -69,4 +79,7 @@
         width: 35%;
     }
     
+   
+
+   
   }

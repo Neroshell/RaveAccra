@@ -5,8 +5,32 @@ import logo from '../../assets/rave_logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 import Button from '../Buttons/Button.jsx';
+import MyModal from '../Modal/MyModal.jsx';
+
+const inbutton = {
+  '@media (min-width: 992px)': {
+    marginLeft: '90px',
+  },
+  margin: '0 auto',
+ 
+};
+
+
 
 const MyNavbar = () => {
+
+  const [showModal, setShowModal] = useState(false);
+  
+  const handleShowModal = () => {
+    setShowModal(true);
+    console.log("Modal should show");
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+   
+  
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
 
@@ -32,6 +56,7 @@ const MyNavbar = () => {
   }, []);
 
   return (
+    <>
     <Navbar variant="dark" expand="lg" className="my-navbar" fixed={isFixed ? "top" : null} >
       <Navbar.Brand href="/">
         <img
@@ -52,10 +77,13 @@ const MyNavbar = () => {
           <Nav.Link href="/contact">Contact Us</Nav.Link>
           
         </Nav>
-        <Button name='RESERVE VIP' />       
+        <Button name='RESERVE VIP' style={inbutton} onClick={handleShowModal} />       
 
       </Navbar.Collapse>
     </Navbar>
+    <MyModal  show={showModal} onHide={handleCloseModal}/>
+    </>
+    
   );
 };
 

@@ -6,8 +6,28 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import './NavbarTwo.css';
 import Button from '../Buttons/Button.jsx';
 
+import MyModal from '../Modal/MyModal.jsx';
 
+const inbutton = {
+  '@media (min-width: 992px)': {
+    marginLeft: '90px',
+  },
+  margin: '0 auto',
+ 
+};
 const NavbarTwo = () => {
+
+  
+  const [showModal, setShowModal] = useState(false);
+  
+  const handleShowModal = () => {
+    setShowModal(true);
+    console.log("Modal should show");
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
 
@@ -51,9 +71,11 @@ const NavbarTwo = () => {
           <Nav.Link href="/event">Event</Nav.Link>
           <Nav.Link href="/about">About</Nav.Link>
           <Nav.Link href="/contact">Contact Us</Nav.Link>
+         
         </Nav>
-        <Button name='Reserve Vip'></Button>
+        <Button name='Reserve Vip' style={inbutton}  onClick={handleShowModal}></Button>
       </Navbar.Collapse>
+      <MyModal  show={showModal} onHide={handleCloseModal}/>
     </Navbar>
   );
 };
