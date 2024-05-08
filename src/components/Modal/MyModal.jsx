@@ -7,7 +7,7 @@ import './modal.css';
 
 
 const validationSchema = Yup.object().shape({
-  firstName: Yup.string().required('First name is required'),
+  firsName: Yup.string().required('First name is required'),
   email: Yup.string().email('Invalid email').required('Email is required'),
   guests: Yup.number()
     .required('Number of guests is required')
@@ -43,25 +43,25 @@ const MyModal = ({ show, onHide }) => {
             <Form  className='modal-form'>
               <h3>VIP Reservation</h3>
               <div className="mb-3">
-                <Field name="firstname" type="text" className='form-control modal-input-box'  placeholder='Firstname' />
-                <ErrorMessage name="firstname" component="div" className="error-message" />
+                <Field name="firstName" type="text" className='form-control modal-input-box'  placeholder='Firstname' required/>
+                <ErrorMessage name="firstName" component="div" className="error-message" />
               </div>
               
               <div className="mb-3">
             
-                <Field name="email" type="email" className='form-control modal-input-box'  placeholder='Email '/>
+                <Field name="email" type="email" className='form-control modal-input-box'  placeholder='Email ' required/>
                 <ErrorMessage name="email" component="div" className="error-message" />
               </div>
               
               <div className="mb-3">
                
-                <Field name="guests" type="number" className='form-control modal-input-box'  placeholder='Number of Guests' />
+                <Field name="guests" type="number" className='form-control modal-input-box'  placeholder='Number of Guests' required />
                 <ErrorMessage name="guests" component="div" className="error-message" />
               </div>
               
               <div className="mb-3">
                
-                <Field name="date" type="date" className='form-control modal-input-box'  />
+                <Field name="date" type="date" className='form-control modal-input-box' required />
                 <ErrorMessage name="date" component="div" className="error-message" />
               </div>
 
