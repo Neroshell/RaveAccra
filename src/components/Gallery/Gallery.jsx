@@ -28,7 +28,7 @@ const Gallery = () => {
       <div className='image-container'>
         {itemData.map((item, index) => (
           <div key={index} className='image-fluid'>
-            <img src={item.img} alt={item.title} />
+            <img src={item.img} alt={item.title} preload="auto" />
           </div>
         ))}
       </div>

@@ -11,7 +11,7 @@ const Footer = () => {
   const buttonStyles = {
     backgroundColor: '#EC53B0',
     color: '#FFE5E5',
-    padding: '20px 40px',
+    padding: '12px 30px',
     margin: '20px auto',
     display: "block",
     '@media (min-width: 768px)': { // Adjust margin-top for large screens
@@ -52,6 +52,7 @@ const Footer = () => {
         <li>RENTAL</li>
         <li>SOCIAL</li>
       </ul>
+      
      
       <div className='img-container'>
         <img src={logo} alt="Logo" />

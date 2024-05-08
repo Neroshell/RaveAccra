@@ -20,7 +20,7 @@ const MyCarousel = () => {
       <Carousel interval={3000} controls={false} className='caurosel-main-div'>
         <Carousel.Item  className='Carousel-Item ' >
           <div className='image-box'>
-            <video className='video-item' autoPlay muted loop playsInline>
+            <video className='video-item' autoPlay muted loop playsInline preload="auto">
               <source src={two} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -34,7 +34,7 @@ const MyCarousel = () => {
         </Carousel.Item>
         <Carousel.Item>
           <div className='image-box'>
-            <video className='video-item' autoPlay muted loop playsInline>
+            <video className='video-item' autoPlay muted loop playsInline preload="auto">
               <source src={two} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -48,7 +48,7 @@ const MyCarousel = () => {
         </Carousel.Item>
         <Carousel.Item>
           <div className='image-box'>
-            <video className='video-item' autoPlay muted loop playsInline>
+            <video className='video-item' autoPlay muted loop playsInline preload="auto">
               <source src={two} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
