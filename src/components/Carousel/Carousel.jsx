@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 
 const buttonStyle = {
-  margin: '90px auto',
+  margin: '50px auto',
   padding: '12px',
   '@media (min-width: 767px)': {
   

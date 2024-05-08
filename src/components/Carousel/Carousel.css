@@ -48,13 +48,15 @@
 
 .carousel_heading {
   position: absolute;
-  top: 50%; /* Position at the vertical center */
+  top: 45%; /* Position at the vertical center */
   transform: translate(-50%, -50%); /* Move back by half of its own width and height */
   text-align: center;
+  left: 50%;
+  
   z-index: 3;
   border-radius: 20px;
-  margin-left: 142px;
-  padding: 35px;
+  padding: 30px;
+  margin: 0 auto;
   width: 100%;
  
     

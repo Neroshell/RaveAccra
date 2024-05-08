@@ -3,10 +3,12 @@
     border-radius: 10px;
     margin-bottom: 16px;
     width: 80%;
-    padding: 20px;
+    
+   
     margin-top: 50px;
     height: 250px;
     padding-top: 30px;
+    padding-bottom: 40px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   }
   
@@ -21,13 +23,13 @@
     margin-bottom: 4px;
     position: relative; /* Set position to relative */
     padding-left: 25px;
+    
   }
 
   .drinks-card-list {
     list-style: none; /* Remove default list styles */
-    padding-left: 0px; /* Reset padding */
-    margin-left: 40px;
-    margin-top: 30px;
+    margin: 0 auto;
+    width: 100%;
    
 }
 
@@ -35,7 +37,7 @@
     content: '•'; /* Unicode bullet character */
     color: var(--secondary-color);
     position: absolute; /* Set position to absolute */
-    left: 0px; /* Position it at the start of the list item */
+    left: 5px; /* Position it at the start of the list item */
 }
 
 
