@@ -87,8 +87,8 @@
   text-align: center; /* Center the text inside the heading */
   width: 80%; /* Adjust width as needed */
   z-index: 5;
-  margin-left: 440px;
   line-height: 1.8px;
+  right: 50%;
   background-color: transparent;
   box-shadow: rgba(236, 83, 176, 0.25) 0px 10px 0px, rgba(236, 83, 176, 0.22) 0px 1px 1px ;
   border-bottom-left-radius: 400px;
