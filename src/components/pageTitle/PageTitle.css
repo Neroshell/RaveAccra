@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('src/assets/club-house3.jpg');
     background-size: cover; /* Cover the entire element with the background image */
     background-position: center; /* Center the background image */
     position: relative;

@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 import { faLocationDot, faPhone, faClock } from '@fortawesome/free-solid-svg-icons'; // Corrected icon import
 import { faInstagram, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import bgImageone from '../../assets/club-house3.jpg'; // Corrected background image import
 
 const Footer = () => {
 
@@ -18,7 +19,7 @@ const Footer = () => {
       padding: '10px 30px',
     },
     '&:hover': {
-      backgroundColor: "rgb(49, 25, 107, 0.6)"   
+      backgroundColor: "rgba(49, 25, 107, 0.6)"   
     },
   };
   const date = new Date();
@@ -43,7 +44,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className='footer'>
+    <div className='footer' style={{ backgroundImage: `url(${bgImageone})` }}>
     
       <ul className='footer-ul'>
         <li>EVENT</li>
