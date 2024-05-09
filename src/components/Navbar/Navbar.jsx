@@ -6,6 +6,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 import Button from '../Buttons/Button.jsx';
 import MyModal from '../Modal/MyModal.jsx';
+import { Link } from 'react-router-dom';
 
 const inbutton = {
   '@media (min-width: 992px)': {
@@ -70,11 +71,11 @@ const MyNavbar = () => {
       </Navbar.Toggle>
       <Navbar.Collapse id="basic-navbar-nav" className={isNavOpen ? 'show' : ''}>
         <Nav className="mr-auto">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/bottleService">Bottle service</Nav.Link>
-          <Nav.Link href="/event">Event</Nav.Link>
-          <Nav.Link href="/about">About</Nav.Link>
-          <Nav.Link href="/contact">Contact Us</Nav.Link>
+        <Link to="/" className="nav-link">Home</Link>
+        <Link to="/bottleService" className="nav-link">Bottle service</Link>
+        <Link to="/event" className="nav-link">Event</Link>
+        <Link to="/about" className="nav-link">About</Link>
+        <Link to="/contact" className="nav-link">Contact Us</Link>
           
         </Nav>
         <Button name='RESERVE VIP' style={inbutton} onClick={handleShowModal} />       
