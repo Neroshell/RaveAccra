@@ -1,9 +1,13 @@
 import React from 'react';
+import { useEffect } from 'react';
 import './Gallery.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import img1 from '../../assets/club-house3.jpg';
 import img2 from '../../assets/club-house3.jpg';
 import img3 from '../../assets/club-house3.jpg';
 import img4 from '../../assets/event_img.jpeg';
+
 
 const itemData = [
   { img: img1, title: 'Image 1' },
@@ -18,14 +22,17 @@ const itemData = [
 ];
 
 const Gallery = () => {
+  useEffect(() => {
+    AOS.init({duration: 3000});
+  }, [])
   return (
     <div className='gallery'>
-    <div className='gallery-heading'>
+    <div className='gallery-heading' data-aos='fade'>
       <h3>Gallery</h3>
       <h4>Event images</h4>
     </div>
     
-      <div className='image-container'>
+      <div className='image-container' data-aos='slide-up'>
         {itemData.map((item, index) => (
           <div key={index} className='image-fluid'>
             <img src={item.img} alt={item.title} preload="auto" />

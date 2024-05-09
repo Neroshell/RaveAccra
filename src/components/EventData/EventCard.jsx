@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import './Eventdata.css';
 import Button from '../Buttons/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import MyModal from '../Modal/MyModal.jsx';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const EventCard = ({ icon, photo, date, name }) => {
+  useEffect(() => {
+    AOS.init({duration: 3000});
+  }, [])
   const [showModal, setShowModal] = useState(false);
   
   const handleShowModal = () => {
@@ -17,7 +23,7 @@ const EventCard = ({ icon, photo, date, name }) => {
   };
    
   return (
-    <div className='event-card'>
+    <div className='event-card' data-aos='slide-up'>
       <div className='event-img'>
         <img src={photo} alt='event' />
       </div>

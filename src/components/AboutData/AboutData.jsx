@@ -1,6 +1,9 @@
 import React from 'react'
+import { useEffect } from 'react';
 import './AboutData.css'
 import image from '../../assets/club-house3.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const images = [
 
@@ -21,9 +24,12 @@ const images = [
 ]
 
 const AboutData = () => {
+    useEffect(() => {
+        AOS.init({duration: 3000});
+      }, [])
   return (
     <div className='about-data'>
-             <div className='about-data-content'>
+             <div className='about-data-content' data-aos='fade'>
                     <h2>Unleash Your Nightlife Fantasy with Endless Revelry</h2>
                     <p>At ClubRave, we are more than just a venue; we are the heartbeat 
                     of Accra's nightlife, pulsating with energy and rhythm. Step into our world,
@@ -38,7 +44,7 @@ const AboutData = () => {
             </div>
              <div className='about-image-sect'>
                  {images.map((image, index) => (
-                    <div className='about-image-container' key={index}>
+                    <div data-aos='slide-up' className='about-image-container' key={index}>
                          <img src={image.imageOne} alt={`Image ${index + 1}`} />
              </div>
 ))}
