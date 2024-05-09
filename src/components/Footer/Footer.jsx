@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faPhone, faClock } from '@fortawesome/free-solid-svg-icons'; // Corrected icon import
 import { faInstagram, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import bgImageone from '../../assets/club-house3.jpg'; // Corrected background image import
+import { Link } from 'react-router-dom';
+
 
 const Footer = () => {
 
@@ -39,7 +41,7 @@ const Footer = () => {
     {
       icon: faClock,
       title: 'Working Hours',
-      text: 'Wednesday - Sunday'
+      text: 'Wednesday - Sunday 10pm - 5am'
     }
   ];
 
@@ -47,11 +49,10 @@ const Footer = () => {
     <div className='footer' style={{ backgroundImage: `url(${bgImageone})` }}>
     
       <ul className='footer-ul'>
-        <li>EVENT</li>
-        <li>VIP</li>
-        <li>MEDIA</li>
-        <li>RENTAL</li>
-        <li>SOCIAL</li>
+          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/event" className="nav-link">Event</Link>
+          <Link to="/about" className="nav-link">About</Link>
+          <Link to="/contact" className="nav-link">Contact Us</Link>
       </ul>
       
      

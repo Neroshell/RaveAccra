@@ -8,11 +8,12 @@ import { Link } from 'react-router-dom';
 
 const buttonStyle = {
   margin: '50px auto',
-  padding: '12px',
+  padding: '8px',
   '@media (min-width: 767px)': {
-  
+   
   }
 };
+
 
 const MyCarousel = () => {
   return (
@@ -56,7 +57,7 @@ const MyCarousel = () => {
           <Carousel.Caption className='carousel_heading'>
           <h1>Discover The Pulse Of Accra's After-dark Allure At <span style={{color: " #EC53B0"}}>Rave.</span>  </h1> 
           <Link to="/about">
-                  <Button style={buttonStyle} name="Learn More" />
+                  <Button style={buttonStyle} name="Learn More.." />
               </Link>
           </Carousel.Caption>
         </Carousel.Item>

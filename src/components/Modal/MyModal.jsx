@@ -64,7 +64,7 @@ const MyModal = ({ show, onHide }) => {
                 <Field name="date" type="date" className='form-control modal-input-box' required />
                 <ErrorMessage name="date" component="div" className="error-message" />
               </div>
-              <Button name='Submit' type="submit" disabled={isSubmitting} style={{ margin: '20px auto' }} />
+              <Button name='Make reservation' type="submit" disabled={isSubmitting} style={{ margin: '20px auto' }} />
             </Form>
           )}
         </Formik>

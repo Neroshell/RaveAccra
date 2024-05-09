@@ -52,7 +52,6 @@
   transform: translate(-50%, -50%); /* Move back by half of its own width and height */
   text-align: center;
   left: 50%;
-  
   z-index: 3;
   border-radius: 20px;
   padding: 30px;
@@ -101,6 +100,7 @@
   color: #FFE5E5;
   font-weight: 900;
 }
+
 
 
 
