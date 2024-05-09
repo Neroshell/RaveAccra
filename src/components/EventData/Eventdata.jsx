@@ -4,7 +4,10 @@ import EventCard from './EventCard';
 import eventinfo from './Eventinfo';
 
 
+
 const Eventdata = () => {
+
+  
   return (
     <div className='event-data'>
       {eventinfo.map((event, index) => (

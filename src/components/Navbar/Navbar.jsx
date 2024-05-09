@@ -72,7 +72,7 @@ const MyNavbar = () => {
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/bottleService">Bottle service</Nav.Link>
-          <Nav.Link href="/events">Event</Nav.Link>
+          <Nav.Link href="/event">Event</Nav.Link>
           <Nav.Link href="/about">About</Nav.Link>
           <Nav.Link href="/contact">Contact Us</Nav.Link>
           
@@ -81,7 +81,7 @@ const MyNavbar = () => {
 
       </Navbar.Collapse>
     </Navbar>
-    <MyModal  show={showModal} onHide={handleCloseModal}/>
+    <MyModal  show={showModal} onHide={handleCloseModal} />
     </>
     
   );
