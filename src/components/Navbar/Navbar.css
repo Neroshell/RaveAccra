@@ -31,6 +31,10 @@
   color: #edeef2; /* Custom text color */
 }
 
+#basic-navbar-nav{
+  padding-bottom: 60px;
+}
+
 /* Media query for larger screens */
 @media (min-width: 768px) {
   .my-navbar  {

@@ -69,7 +69,7 @@ const MyNavbar = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNav} style={{marginRight: "20px"}}>
         {isNavOpen ? <FaTimes /> : <FaBars />}
       </Navbar.Toggle>
-      <Navbar.Collapse id="basic-navbar-nav" className={isNavOpen ? 'show' : ''}>
+      <Navbar.Collapse  id="basic-navbar-nav" className={isNavOpen ? 'show' : ''}>
         <Nav className="mr-auto">
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/bottleService" className="nav-link">Bottle service</Link>
