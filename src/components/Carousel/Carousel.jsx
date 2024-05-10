@@ -12,7 +12,8 @@ import 'aos/dist/aos.css';
 
 const buttonStyle = {
   margin: '50px auto',
-  padding: '8px',
+  padding: '7px',
+ 
  
 };
 
@@ -34,7 +35,7 @@ const MyCarousel = () => {
           <Carousel.Caption className='carousel_heading'>
               <h1 data-aos = 'fade'>Experience The Thrill Of  Accra's Nightlife At <span style={{color: " #EC53B0", fontWeight:'900'}}>Rave.</span></h1> 
               <Link to="/about">
-                  <Button style={buttonStyle} name="Learn More" className='learn-button'/>
+                  <Button style={buttonStyle} name="Learn More.." className='learn-button'/>
               </Link>
           </Carousel.Caption>
         </Carousel.Item>
@@ -48,7 +49,7 @@ const MyCarousel = () => {
           <Carousel.Caption className='carousel_heading' >
           <h1 >Elevate Your <span style={{color: " #EC53B0"}}>Nightlife</span> Experience To New Heights  </h1> 
           <Link to="/about">
-                  <Button style={buttonStyle} name="Learn More" className='learn-button'/>
+                  <Button style={buttonStyle} name="Learn More.." className='learn-button'/>
               </Link>
           </Carousel.Caption>
         </Carousel.Item>

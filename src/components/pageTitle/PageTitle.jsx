@@ -1,6 +1,6 @@
 import React from 'react';
 import './PageTitle.css';
-import bgImageone from '../../assets/club-house3.jpg'; 
+import bgImageone from '../../assets/club-house4.jpg'; 
 
 function PageTitle(props) {
   return (
