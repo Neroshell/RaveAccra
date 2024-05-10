@@ -40,8 +40,8 @@ const Footer = () => {
     },
     {
       icon: faClock,
-      title: 'Working Hours',
-      text: 'Wednesday - Sunday 10pm - 5am'
+      title: 'Working Days',
+      text: 'Wednesday - Sunday '
     }
   ];
 

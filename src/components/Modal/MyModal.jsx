@@ -61,7 +61,7 @@ const MyModal = ({ show, onHide }) => {
                   <ErrorMessage name="reservationType" component="div" className="error-message" />
                 </div>
               <div className="mb-3">
-                <Field name="date" type="date" className='form-control modal-input-box' required />
+                <Field name="date" type="date" className='form-control modal-input-box' placeholder='Date' required />
                 <ErrorMessage name="date" component="div" className="error-message" />
               </div>
               <Button name='Make reservation' type="submit" disabled={isSubmitting} style={{ margin: '20px auto' }} />

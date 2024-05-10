@@ -22,9 +22,9 @@ const ContactData = () => {
       <div className='form-info'>
         <div className='form-info-content'>
           <h1>Did you know?</h1>
-          <p>For more information, please fill out the form located here or call (818) 500-7800. For other inquiries email: info@clubgigglesla.com</p>
+          <p>For more information, please fill out the form located here or call (233) 123-457. For other inquiries email: info@raveaccra.com</p>
           <p>If you are inquiring about your items lost during your time here, please provide any identifying information of your lost items such as name, brand, colour, etc and we'll be in touch if it turns up.</p>
-          <p>The management reserves the right to change drink and admission prices from time to time. Please email info@clubgigglesla.com for further information.</p>
+          <p>The management reserves the right to change drink and admission prices from time to time. Please email info@raveaccra.com for further information.</p>
         </div>
 
         <ContactForm/>
