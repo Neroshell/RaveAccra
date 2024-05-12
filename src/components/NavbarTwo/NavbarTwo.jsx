@@ -63,7 +63,7 @@ const NavbarTwo = () => {
           className="d-inline-block align-top nav-logo"
         />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNav} style={{marginRight: "20px"}}>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" className='nav-toggle' onClick={toggleNav} style={{marginRight: "20px"}}>
         {isNavOpen ? <FaTimes /> : <FaBars />}
       </Navbar.Toggle>
       <Navbar.Collapse id="basic-navbar-nav" className={isNavOpen ? 'show' : ''}>

@@ -55,9 +55,27 @@
    
 }
 
+@media (min-width: 767px) and (max-width: 1024px){
+    .about-data-content{
+        margin-top: 50px;
+    }
+
+    .about-image-container{
+        width: 40%;
+        height: 300px;
+    }
+    
   
+    .about-image-sect{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 80px;
+
+    }
+}
   
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
     .about-data-content{
         margin-top: 50px;
     }

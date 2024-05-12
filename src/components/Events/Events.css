@@ -79,7 +79,16 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 767px) and (max-width: 1024px){
+  .events{
+      margin-top: 93vh;
+      padding-top: 90px;
+  }
+}
+
+
+
+@media (min-width: 1025px) {
 
     .events{
        

@@ -24,7 +24,7 @@ const MyCarousel = () => {
   }, [])
   return (
     <div className='carousel_cont'> 
-      <Carousel interval={3000} controls={false} className='caurosel-main-div'>
+      <Carousel interval={3000} controls={false} className='carousel-main-div'>
         <Carousel.Item  className='Carousel-Item ' >
           <div className='image-box'>
             <video className='video-item' autoPlay muted loop playsInline preload="auto">

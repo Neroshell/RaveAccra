@@ -92,14 +92,28 @@
 
 
 
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        .card-content{
-          border-radius: 0px;
-        }
+  @media (min-width: 767px) and (max-width: 1024px)  {
+        
+    .card-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+      margin-top: -40px;
+      flex-wrap: wrap;
+     
   }
+     
+  .card-class{
 
+    width: 40%;
+    height: 400px;
   
-@media (min-width: 768px) {
+      
+}
+  }
+  
+@media (min-width: 1025px) {
 
     .services{
        
@@ -113,6 +127,7 @@
         justify-content: center;
         gap: 10px;
         margin-top: -40px;
+        flex-wrap: wrap;
        
     }
 

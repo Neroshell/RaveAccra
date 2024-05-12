@@ -31,8 +31,28 @@
   color: #edeef2; /* Custom text color */
 }
 
+@media (min-width: 767px) and (max-width: 1024px) {
+  .nav-logo{
+    width: 18%;
+} 
+
+.nav-toggle{
+  
+  font-size: 30px;
+    
+}
+
+.my-navbar {
+
+  justify-content: space-between;
+}
+
+
+}
+
+
 /* Media query for larger screens */
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .my-navbar  {
     width: 100%;
     display: flex;

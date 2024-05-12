@@ -5,6 +5,7 @@ import drinksData from '../Card/CardData.js'; // Import the drinksData
 
 const BottleData = () => {
   return (
+    <div>
     <div className='bottle-data'>
       {drinksData.map((category, index) => (
         <Card
@@ -13,7 +14,9 @@ const BottleData = () => {
           drinks={category.drinks} // Pass the array of drinks as prop
         />
       ))}
-        <p>Prices are subject to change without notice</p>
+        
+    </div>
+        <p className='bottle-data-p'>Prices are subject to change without notice</p>
     </div>
   );
 };

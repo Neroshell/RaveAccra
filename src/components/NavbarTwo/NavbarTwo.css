@@ -28,9 +28,35 @@
   
 }
 
+@media (min-width: 767px) and (max-width: 1024px) {
+  .nav-logo{
+      width: 18%;
+  } 
+
+  .nav-toggle{
+    
+    font-size: 30px;
+      
+  }
+  .navbar-two{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    gap: 120px;
+    background-color: rgb(49, 25, 107);
+    height: auto;
+    position: fixed;
+  }
+ 
+}
+
 
 /* Media query for larger screens */
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .navbar-two {
     width: 100%;
     display: flex;
@@ -43,6 +69,7 @@
     background-color: rgb(49, 25, 107);
     height: 100px;
     position: fixed;
+    
   }
   
   .nav-link::after {

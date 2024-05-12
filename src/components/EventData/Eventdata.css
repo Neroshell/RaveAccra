@@ -51,9 +51,31 @@
     gap: 20px;
 }
 
+@media (min-width: 767px) and (max-width: 1024px){
+    .event-card{
+       
+        width: 40%;
+    }
 
+    .event-data{
 
-@media (min-width: 768px) {
+        display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+    }
+    
+    .event-img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .event-info{
+        width: 100%;
+        
+    }
+
+}
+
+@media (min-width: 1025px) {
    
     .event-data{
 
