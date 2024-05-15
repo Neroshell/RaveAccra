@@ -80,9 +80,15 @@ const Footer = () => {
       </div>
 
       <div className='icon-data'>
-        <FontAwesomeIcon icon={faInstagram} />
+      <a href="https://www.instagram.com/raveaccra?igsh=YjZlYjJxeDZrZXd4" >
+      <FontAwesomeIcon icon={faInstagram} />
+      </a>
+      <a href="https://x.com/raveaccra?t=V5P6zcIRHL8G4IOinc-vfw&s=08" >
         <FontAwesomeIcon icon={faTwitter} />
+      </a>
+      <a href="https://www.instagram.com/raveaccra?igsh=YjZlYjJxeDZrZXd4" >
         <FontAwesomeIcon icon={faFacebook} />
+      </a>
       </div>
         
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>

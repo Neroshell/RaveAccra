@@ -6,6 +6,7 @@ import 'swiper/css/navigation';
 
 import {Autoplay, Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import event_img from '../../assets/event_img.jpeg';
+import event_img2 from '../../assets/event-one.jpg';
 
 const UpcomingEventsCarousel = () => {
   return (
@@ -31,32 +32,32 @@ const UpcomingEventsCarousel = () => {
              loop={true}
       >
         {/* SwiperSlides as children */}
-        <SwiperSlide>
+        <SwiperSlide style={{height: 'auto'}}>
           <div className='swiper-slide'>
             <img className='carousel-image' src={event_img} alt="Event" />
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide  style={{height: 'auto'}}>
+          <div className='swiper-slide'>
+            <img className='carousel-image' src={event_img2} alt="Event" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide style={{height: 'auto'}}>
           <div className='swiper-slide'>
             <img className='carousel-image' src={event_img} alt="Event" />
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide style={{height: 'auto'}}>
+          <div className='swiper-slide'>
+            <img className='carousel-image' src={event_img2} alt="Event" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide style={{height: 'auto'}}>
           <div className='swiper-slide'>
             <img className='carousel-image' src={event_img} alt="Event" />
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className='swiper-slide'>
-            <img className='carousel-image' src={event_img} alt="Event" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className='swiper-slide'>
-            <img className='carousel-image' src={event_img} alt="Event" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide style={{height: 'auto'}}>
           <div className='swiper-slide'>
             <img className='carousel-image' src={event_img} alt="Event" />
           </div>

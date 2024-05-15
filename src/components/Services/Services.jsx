@@ -4,6 +4,7 @@ import './Services.css';
 import serviceImg from '../../assets/pop_bottle.jpg'; 
 import birthdayImg from '../../assets/birthday.jpg'; 
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -42,14 +43,14 @@ const Services = () => {
           <div className='card-class' data-aos='slide-up' style={{ backgroundImage: `url(${serviceImg})` }}>
             <div className='card-content'>
           <h4>Bottle Services</h4>
-            <Button variant='contained' sx={ButtonDesign}> More info </Button>
+           <Link to='/bottle-service'> <Button variant='contained' sx={ButtonDesign}> More info </Button> </Link>
            
           </div>
         </div>
-        <div  className='card-class'  data-aos='slide-up'  style={{ backgroundImage: `url(${birthdayImg})` }}>
+        <div  className='card-class'  data-aos='fade-out'  style={{ backgroundImage: `url(${birthdayImg})` }}>
           <div className='card-content'>
           <h4>Birthday Parties</h4>
-            <Button variant='contained' sx={ButtonDesign}> More info </Button>
+          <Link to='/birthday-service'> <Button variant='contained' sx={ButtonDesign}> More info </Button> </Link>
           </div>
         </div>
         <div  className='card-class' data-aos='slide-up' style={{ backgroundImage: `url(${serviceImg})` }}>

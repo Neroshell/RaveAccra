@@ -4,7 +4,7 @@ import './Gallery.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import img1 from '../../assets/club-house3.jpg';
-import img2 from '../../assets/club-house3.jpg';
+import img2 from '../../assets/rave1.jpg';
 import img3 from '../../assets/club-house3.jpg';
 import img4 from '../../assets/event_img.jpeg';
 

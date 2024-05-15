@@ -118,6 +118,14 @@ margin: 60px auto;
   padding-bottom: 20px;
 }
 
+.icon-data a{
+  color: white;
+}
+
+.icon-data a:hover{
+  color: #EC53B0;
+}
+
 
 
 
