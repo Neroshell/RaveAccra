@@ -2,13 +2,14 @@ import React from 'react'
 import { useEffect } from 'react';
 import './AboutData.css'
 import image from '../../assets/club-house3.jpg';
+import img2 from '../../assets/rave1.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const images = [
 
     {
-        imageOne: image
+        imageOne: img2
     },
     
     {
@@ -16,7 +17,7 @@ const images = [
     },
     
     {
-        imageOne: image
+        imageOne: img2
     },
     {
         imageOne: image
